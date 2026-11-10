@@ -1,0 +1,304 @@
+<!doctype html>
+<!--
+  Site Man privacy policy — self-contained for GitHub Pages.
+  Contact: isaacwong.sse@gmail.com — the same address shown on the Play listing. No fonts,
+  scripts or images are loaded from anywhere: the page works offline and does not track
+  readers.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Man — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1f24;
+    --muted: #5a6472;
+    --rule: #dfe3e8;
+    --accent: #1f4e8c;
+    --code: #f2f4f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116;
+      --fg: #e6e9ee;
+      --muted: #9aa4b2;
+      --rule: #262c35;
+      --accent: #8ab4f8;
+      --code: #171b21;
+    }
+  }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 5rem;
+    max-width: 46rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.2rem; margin: 2.2rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  p, ul, ol, table { margin: .7rem 0; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  .updated { color: var(--muted); margin: 0 0 2rem; }
+  .lede { font-size: 1.05rem; }
+  nav {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule); padding-bottom: .9rem; margin-bottom: 2rem;
+  }
+  nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  nav a:hover { text-decoration: underline; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  code {
+    background: var(--code); border-radius: .3rem; padding: .1rem .35rem;
+    font-size: .92em; overflow-wrap: anywhere;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0 2.5rem; }
+  .todo { color: #b3261e; font-weight: 600; }
+  @media print { nav { display: none; } }
+</style>
+</head>
+<body>
+
+<nav aria-label="Language">
+  <a href="#english" hreflang="en">English</a>
+  <a href="#chinese" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+</nav>
+
+<article id="english" lang="en">
+  <h1>Site Man privacy policy</h1>
+  <p class="updated">Last updated: 9 November 2026</p>
+
+  <p class="lede">Site Man is an Android app for keeping site records, forms, drawings, photos
+  and reminders on your phone. This policy explains what the app does with information.</p>
+
+  <p>The short version: there is no account and no Site Man server. What you create stays on
+  your phone, apart from the optional weather look-ups and the dictation described below.</p>
+
+  <h2>Who we are</h2>
+  <p>Site Man is developed and published by the developer named on its Google Play listing
+  (&ldquo;we&rdquo;, &ldquo;us&rdquo;). You can reach us at
+  <a href="mailto:isaacwong.sse@gmail.com">isaacwong.sse@gmail.com</a>.</p>
+
+  <h2>What stays on your phone</h2>
+  <p>The app stores the following in its own private storage on your device:</p>
+  <ul>
+    <li>projects, site records, forms, record templates and their answers;</li>
+    <li>drawings, imported PDFs, photos, scans and captions;</li>
+    <li>reminders and schedule entries, and the times they are set to alert;</li>
+    <li>app settings, including the display language, text size and, if you enter one, the
+      name attached to templates and cards you share;</li>
+    <li>your choice of app lock.</li>
+  </ul>
+  <p>This information is not sent to us. We cannot see it, and we have no server that holds a
+  copy.</p>
+
+  <h2>What leaves your phone</h2>
+  <p>The app has no account system and does not upload your records. Three optional features
+  use the network or the phone's own services:</p>
+
+  <h3>Weather</h3>
+  <p>When you open the weather page, the app sends requests to:</p>
+  <ul>
+    <li>the Hong Kong Observatory open-data API (<code>data.weather.gov.hk</code>) and radar
+      images (<code>www.hko.gov.hk</code>);</li>
+    <li>Open-Meteo (<code>api.open-meteo.com</code>) for the hourly forecast.</li>
+  </ul>
+  <p>These requests carry <strong>fixed Hong Kong coordinates</strong> (22.30&deg; N,
+  114.17&deg; E). The app does not request the location permission and never reads your
+  device's location. As with any internet request, the service receives your IP address and
+  may log it under its own privacy policy:
+  <a href="https://www.hko.gov.hk/en/others/privacypolicy.htm">hko.gov.hk privacy policy</a>
+  and <a href="https://open-meteo.com/en/terms">open-meteo.com terms</a>. Weather is optional;
+  the rest of the app works offline.</p>
+
+  <h3>Dictation</h3>
+  <p>When you tap the microphone, the app uses Android's speech recognition service. The
+  microphone is used only while the dictation sheet is open, and the app does not keep a
+  recording afterwards.</p>
+  <ul>
+    <li>On phones with on-device speech recognition, the app asks Android to recognise speech
+      offline, and the audio is processed on the phone.</li>
+    <li>On other phones, the system speech service may send the audio to its provider (for
+      example Google) for processing. That is controlled by the phone and its speech provider,
+      not by Site Man; check the provider's privacy policy and your phone's speech settings.</li>
+  </ul>
+  <p>Site Man itself does not upload audio. Anything the recogniser returns is placed in the
+  field you are filling in, and is saved only if you save the form.</p>
+
+  <h3>Translation and AI</h3>
+  <p>The translation and &ldquo;Create with AI&rdquo; features use Android's on-device AI
+  (Gemini Nano through ML Kit GenAI). They are offered only when the phone has the on-device
+  model installed. The text is processed on the device; the app does not send it to us or to
+  any server. If the phone does not support them, the buttons are disabled and the app says
+  why.</p>
+
+  <h3>Sharing</h3>
+  <p>Nothing is shared unless you choose to share it. Sharing uses Android's own share sheet:
+  the app hands the item you picked to the app you pick. We never receive a copy.</p>
+
+  <h3>Camera and scanning</h3>
+  <p>The camera is used only while the scanner or a photo attachment is open. Camera images
+  are processed on the device by the scanning feature.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No account, sign-up or login.</li>
+    <li>No advertising, and no advertising identifier.</li>
+    <li>No analytics, crash-reporting or tracking SDK that sends data off the device.</li>
+    <li>No selling or renting of personal data.</li>
+    <li>No access to your contacts, calendar, photos library or location.</li>
+  </ul>
+
+  <h2>Permissions and why the app asks</h2>
+  <table>
+    <thead><tr><th scope="col">Permission</th><th scope="col">Used for</th></tr></thead>
+    <tbody>
+      <tr><td>Internet</td><td>Weather look-ups only</td></tr>
+      <tr><td>Microphone</td><td>Dictation, while the dictation sheet is open</td></tr>
+      <tr><td>Camera</td><td>Scanning text, barcodes and QR codes; attaching photos</td></tr>
+      <tr><td>Notifications</td><td>Reminder and schedule alerts you set</td></tr>
+      <tr><td>Exact alarms</td><td>Delivering those alerts at the time you chose</td></tr>
+      <tr><td>Run after restart</td><td>Restoring your reminders after the phone restarts</td></tr>
+      <tr><td>Vibrate</td><td>Alert feedback</td></tr>
+    </tbody>
+  </table>
+  <p>You can refuse any of these; the rest of the app keeps working.</p>
+
+  <h2>Storage, backups and deletion</h2>
+  <p>Data lives in the app's private storage. Android cloud backup and device-to-device
+  transfer are switched off for this app (<code>allowBackup=false</code> and explicit
+  extraction rules), so records, photos and drawings are not copied into a Google backup or
+  onto a new phone.</p>
+  <p>You can delete individual items inside the app. Uninstalling Site Man removes its private
+  storage, and with it everything the app saved. Because we hold no copy, deletion is
+  permanent.</p>
+
+  <h2>Security</h2>
+  <p>The app relies on Android's app sandbox to keep its files away from other apps. If you
+  turn on the optional app lock, unlocking uses Android's biometric prompt (fingerprint, face
+  or the device PIN/pattern/password). Biometric data is handled by Android and is never
+  available to Site Man.</p>
+
+  <h2>Children</h2>
+  <p>Site Man is a tool for site work and is not directed to children. We do not knowingly
+  collect information from children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we will update this page and the date at the top. Material
+  changes will also be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or the app's data handling:
+  <a href="mailto:isaacwong.sse@gmail.com">isaacwong.sse@gmail.com</a>.</p>
+  <p>If you are in Hong Kong and are not satisfied with our response, you may contact the
+  Office of the Privacy Commissioner for Personal Data:
+  <a href="https://www.pcpd.org.hk/english/complaints/how_complaint/complaint.html">pcpd.org.hk</a>.</p>
+</article>
+
+<hr>
+
+<article id="chinese" lang="zh-Hant">
+  <h1>Site Man 私隱政策</h1>
+  <p class="updated">最後更新：2026 年 11 月 9 日</p>
+
+  <p class="lede">Site Man 是一個 Android 應用程式，讓你把工地記錄、表單、圖則、相片與提醒保存在手機上。本政策說明這個應用程式如何處理資料。</p>
+
+  <p>簡而言之：本程式沒有帳戶，也沒有 Site Man 伺服器。你建立的內容都留在你的手機，只有下文所述的天氣查詢與聽寫會涉及外部服務。</p>
+
+  <h2>我們是誰</h2>
+  <p>Site Man 由 Google Play 商店頁面上列明的開發者開發及發佈（下稱「我們」）。聯絡電郵：<a href="mailto:isaacwong.sse@gmail.com">isaacwong.sse@gmail.com</a>。</p>
+
+  <h2>留在你手機上的資料</h2>
+  <p>本程式把以下資料儲存在裝置上的私人空間：</p>
+  <ul>
+    <li>項目、工地記錄、表單、記錄模板及其答案；</li>
+    <li>圖則、匯入的 PDF、相片、掃描影像與說明；</li>
+    <li>提醒與日程，以及你設定的提示時間；</li>
+    <li>應用程式設定，包括顯示語言、文字大小，以及（如你填寫）附加於你分享的模板與卡片上的姓名；</li>
+    <li>你的應用程式鎖設定。</li>
+  </ul>
+  <p>這些資料不會傳送給我們。我們看不到，也沒有伺服器保存副本。</p>
+
+  <h2>離開你手機的資料</h2>
+  <p>本程式沒有帳戶系統，也不會上傳你的記錄。以下三項可選功能會使用網絡或手機本身的服務：</p>
+
+  <h3>天氣</h3>
+  <p>當你開啟天氣頁時，本程式會向以下服務發出請求：</p>
+  <ul>
+    <li>香港天文台開放數據 API（<code>data.weather.gov.hk</code>）及雷達圖像（<code>www.hko.gov.hk</code>）；</li>
+    <li>Open-Meteo（<code>api.open-meteo.com</code>），用於逐小時預報。</li>
+  </ul>
+  <p>這些請求使用<strong>固定的香港座標</strong>（北緯 22.30 度、東經 114.17 度）。本程式不請求定位權限，也從不讀取你的裝置位置。與任何互聯網請求一樣，服務供應商會收到你的 IP 位址，並可能按其私隱政策記錄：<a href="https://www.hko.gov.hk/tc/others/privacypolicy.htm">香港天文台私隱政策</a>及 <a href="https://open-meteo.com/en/terms">Open-Meteo 條款</a>。天氣功能是可選的；程式其餘部分可離線使用。</p>
+
+  <h3>聽寫</h3>
+  <p>當你按下麥克風，本程式會使用 Android 的語音辨識服務。麥克風只在聽寫畫面開啟時使用，程式事後不會保留錄音。</p>
+  <ul>
+    <li>在具備裝置端語音辨識的手機上，本程式會要求 Android 離線辨識，音訊在手機上處理。</li>
+    <li>在其他手機上，系統語音服務可能把音訊傳送給其供應商（例如 Google）處理。這由手機及其語音服務供應商控制，並非由 Site Man 控制；請參閱該供應商的私隱政策及手機的語音設定。</li>
+  </ul>
+  <p>Site Man 本身不會上傳音訊。辨識結果只會填入你正在編輯的欄位，並只在你儲存表單時才會保存。</p>
+
+  <h3>翻譯與 AI</h3>
+  <p>翻譯及「用 AI 建立」功能使用 Android 的裝置端 AI（透過 ML Kit GenAI 使用 Gemini Nano）。只有在手機已安裝裝置端模型時才會提供。文字在裝置上處理；本程式不會把文字傳送給我們或任何伺服器。如手機不支援，按鈕會停用，程式亦會說明原因。</p>
+
+  <h3>分享</h3>
+  <p>除非你選擇分享，否則不會分享任何內容。分享經 Android 內建的分享選單進行：本程式把你選取的項目交給你選取的應用程式。我們不會收到副本。</p>
+
+  <h3>相機與掃描</h3>
+  <p>相機只在掃描器或附加相片時使用。相機影像由掃描功能在裝置上處理。</p>
+
+  <h2>我們不會做的事</h2>
+  <ul>
+    <li>不設帳戶、註冊或登入。</li>
+    <li>沒有廣告，也不使用廣告識別碼。</li>
+    <li>沒有會把資料送出裝置的分析、當機回報或追蹤 SDK。</li>
+    <li>不會出售或出租個人資料。</li>
+    <li>不會讀取你的聯絡人、日曆、相片庫或位置。</li>
+  </ul>
+
+  <h2>權限與用途</h2>
+  <table>
+    <thead><tr><th scope="col">權限</th><th scope="col">用途</th></tr></thead>
+    <tbody>
+      <tr><td>互聯網</td><td>僅用於天氣查詢</td></tr>
+      <tr><td>麥克風</td><td>聽寫，只在聽寫畫面開啟時</td></tr>
+      <tr><td>相機</td><td>掃描文字、條碼與二維碼；附加相片</td></tr>
+      <tr><td>通知</td><td>你設定的提醒與日程提示</td></tr>
+      <tr><td>精確鬧鐘</td><td>在你選擇的時間送出上述提示</td></tr>
+      <tr><td>開機後執行</td><td>手機重新啟動後恢復你的提醒</td></tr>
+      <tr><td>震動</td><td>提示回饋</td></tr>
+    </tbody>
+  </table>
+  <p>你可以拒絕任何一項權限，程式其餘部分仍可運作。</p>
+
+  <h2>儲存、備份與刪除</h2>
+  <p>資料保存在應用程式的私人空間。本程式已關閉 Android 雲端備份與裝置間轉移（<code>allowBackup=false</code> 及明確的排除規則），因此記錄、相片與圖則不會被複製到 Google 備份或新手機。</p>
+  <p>你可以在程式內刪除個別項目。解除安裝 Site Man 會移除其私人空間，連同程式保存的一切資料。由於我們沒有副本，刪除後無法復原。</p>
+
+  <h2>保安</h2>
+  <p>本程式依賴 Android 的應用程式沙箱，把其檔案與其他應用程式隔離。如你開啟可選的應用程式鎖，解鎖會使用 Android 的生物辨識提示（指紋、人臉或裝置的 PIN／圖案／密碼）。生物辨識資料由 Android 處理，Site Man 永遠無法取得。</p>
+
+  <h2>兒童</h2>
+  <p>Site Man 是工地工作工具，並非以兒童為對象。我們不會在知情下收集兒童的資料。</p>
+
+  <h2>政策更新</h2>
+  <p>如本政策有變更，我們會更新本頁及頁首日期。重大變更亦會在本程式的版本說明中註明。</p>
+
+  <h2>聯絡我們</h2>
+  <p>如對本政策或本程式的資料處理有疑問：<a href="mailto:isaacwong.sse@gmail.com">isaacwong.sse@gmail.com</a>。</p>
+  <p>如你身處香港而對我們的回覆不滿意，可聯絡個人資料私隱專員公署：<a href="https://www.pcpd.org.hk/english/complaints/how_complaint/complaint.html">pcpd.org.hk</a>。</p>
+</article>
+
+</body>
+</html>
